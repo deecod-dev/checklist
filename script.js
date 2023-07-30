@@ -34,6 +34,7 @@ if(storedData!=null)
     ticky.addEventListener("click", function () {
       // console.log(this.parentElement.textContent[0]);
       delElement(this.parentElement.textContent[0]);
+      counter--
     });
 
     l.textContent = counter + 1 + ".  " + element;
@@ -120,7 +121,7 @@ function delElement(i)
   //add stikethrough
   document.querySelectorAll("li")[i - 1].setAttribute("style", "text-decoration: line-through;");
   localStorage.setItem("arr", JSON.stringify(oldarr));
-  counter--
+  // counter--
   // console.log(arr)
   
 }
