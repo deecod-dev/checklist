@@ -1,0 +1,17 @@
+.cont{
+    border: solid red 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
