@@ -1,17 +1,136 @@
-.cont{
-    border: solid red 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 250px;
-    flex-direction: column;
-    border-radius: 5px;
-}
-.inp{
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-ul{
+.cont {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.inp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-box {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+    transition: border-color 0.3s ease;
+}
+
+.input-box:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.list-box {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding: 0;
+}
+.tick {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.clear-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.clear-btn:hover {
+    background-color: #cc0000;
+}
+
+.list-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.list-box::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.list-box::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+
+ul {
     list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f1f1f1;
 }
